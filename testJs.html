@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testing JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="write.js"></script>
+    <script type="text/javascript">
+    function sleep(seconds) {
+        var startTime = Date.now();
+        var currentTime;
+        console.log(startTime);
+        do {
+            currentTime = Date.now();
+        } while ((currentTime - startTime) < seconds);
+        console.log(currentTime);
+    }
+
+    function load() {
+        // document.write('This is Heading Two');
+        // console.log('This is Heading Two');
+        // var head1 = document.getElementById("head1");
+        // console.log(head1.innerHTML);
+        // head1.innerHTML = "Another Heading Two!";
+        // document.getElementById("head1").innerHTML = "This ";
+        // sleep(1000);
+        // head1.innerHTML = "";
+        // sleep(1000);
+        // document.getElementById("head1").innerHTML = "This is";
+
+        // number variable
+        // var number = 10;
+        // console.log(number + 4);
+        // console.log(number - 4);
+        // console.log(number * 4);
+        // console.log(number / 4);
+        // console.log(number % 4);
+        // var stringNumber = "100";
+        // console.log("My first String "  + "My Second String");
+        // console.log(stringNumber + 4);
+        // console.log(parseInt(stringNumber))
+        var name = "Tayo";
+        var head1 = document.getElementById("head1");
+        head1.innerHTML = "My name is " + name;
+        head1.innerHTML = head1.innerHTML + "<br> <h2 style='color: cyan;'> I am 12 years old.</h2>";
+    }
+    </script>
+</head>
+
+<body>
+    <div id="div_1">
+        <h1 id="div_head_1" onclick="load()">
+	        Describe me
+	        <span>Yoo!</span>
+	    </h1>
+        <p class="div_p">This is a paragraph in div one.</p>
+    </div>
+    <div id="div_2">
+        <h1 id="div_head_2" onclick="load()">Describe me</h1>
+        <p class="div_p">This is a paragraph in div two .</p>
+    </div>
+    <div id="div_3">
+        <h1 id="div_head_3" onclick="load()">Describe me</h1>
+        <p class="div_p">This is a paragraph in div three.</p>
+    </div>
+    <div id="div_4">
+        <h1 id="div_head_4" onclick="load()">Describe me</h1>
+        <p class="div_p">This is a paragraph in div four.</p>
+    </div>
+    <div id="div_5">
+        <h1 id="div_head_5" onclick="load()">Describe me</h1>
+        <p class="div_p">This is a paragraph  in div five.</p>
+    </div>
+</body>
+
+</html>

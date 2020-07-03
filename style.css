@@ -1,0 +1,61 @@
+
+
+
+
+/*
+css selectors 
+csss
+1. using element/tag name
+2.  using classes
+3. using id
+4. using parent/child relationship
+*/
+
+p{
+	color: xorange;
+	font-size: 50px;
+}
+
+p.div_p{
+	color: red;
+}
+
+
+div:nth-child(odd){
+	background-color: blue;
+	border: 2px solid red;
+}
+
+h4:last-child{
+	background-color: blueviolet;
+}
+
+/*define styles for the table.html*/
+
+
+table{
+	/*border-width: medium;*/
+	border: 2px solid darkkhaki;
+	margin: 100px auto;
+	padding: 10px;
+}
+
+thead:first-child{
+	/*padding: 20px;*/
+	font-size: 20px;
+}
+
+th, td{
+	padding: 5px 50px;
+}
+td{
+	border-bottom: 2px solid saddlebrown;
+}
+
+tbody tr:nth-child(odd){
+	background-color: darkcyan;
+}
+
+tbody tr:nth-child(even){
+	background-color: mediumaquamarine;
+}
